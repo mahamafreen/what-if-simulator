@@ -1,0 +1,5 @@
+{
+  "name": "Student Daily Planner",
+  "description": "A student productivity tool to analyze habits, calculate GPA, and simulate outcomes.",
+  "requestFramePermissions": []
+}
