@@ -27,17 +27,17 @@ export class StateGraph {
     this.addEdge(LifeState.BALANCED, LifeState.TIRED);
     this.addEdge(LifeState.BALANCED, LifeState.STRESSED);
 
-    this.addEdge(LifeState.TIRED, LifeState.FRESH); // After rest
+    this.addEdge(LifeState.TIRED, LifeState.FRESH); 
     this.addEdge(LifeState.TIRED, LifeState.STRESSED);
     this.addEdge(LifeState.TIRED, LifeState.BURNOUT);
 
     this.addEdge(LifeState.STRESSED, LifeState.TIRED);
     this.addEdge(LifeState.STRESSED, LifeState.BURNOUT);
     
-    this.addEdge(LifeState.FLOW, LifeState.TIRED); // Flow consumes energy
+    this.addEdge(LifeState.FLOW, LifeState.TIRED); 
     this.addEdge(LifeState.FLOW, LifeState.BALANCED);
 
-    this.addEdge(LifeState.BURNOUT, LifeState.FRESH); // Recovery
+    this.addEdge(LifeState.BURNOUT, LifeState.FRESH); 
   }
 
   public addEdge(from: LifeState, to: LifeState) {
